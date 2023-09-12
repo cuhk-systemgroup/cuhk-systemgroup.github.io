@@ -538,7 +538,7 @@
 <p>After adding the folder, you shall see an entry added to the list of shared folders. Click &quot;OK&quot; to confirm.</p>
 <p><img src="../assets/n.png" alt=""></p>
 <p>Back to the VM, add &quot;csci3150&quot; to the group &quot;vboxsf&quot; by executing the following command in a terminal.</p>
-<p><code>$ sudo usermod -a -G vboxsf csci3150</code><img src="../assets/o.png" alt="">Reboot the VM. VirtualBox will then automatically mount the shared folder inside the VM for you upon boot.</p>
+<p><code>$ sudo usermod -aG vboxsf $(whoami)</code><img src="../assets/o.png" alt="">Reboot the VM. VirtualBox will then automatically mount the shared folder inside the VM for you upon boot.</p>
 <p>After the machine reboots, open a terminal and execute the following command to check if the folder is mount .</p>
 <p><code>$ mount</code></p>
 <p><img src="../assets/p.png" alt=""></p>
